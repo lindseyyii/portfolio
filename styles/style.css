@@ -2,6 +2,7 @@ body {
     font-family: 'Tenor Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: e4dddd;
 }
 header {
     background: #e4dddd;
@@ -17,7 +18,7 @@ header nav ul li {
     margin-right: 20px;
 }
 header nav ul li a {
-    color: #dbcfcf;
+    color: #000000;
     text-decoration: none;
 }
 footer {
@@ -32,7 +33,8 @@ main {
 h1 {
     color: #333;
     left: 20%;
-    font-family: 'Inknut Antique', sans-serif;
+    font-family: 'Inknut Antiqua', sans-serif;
+    font-size: 200px;
 }
 .gallery {
     margin: 5px;
