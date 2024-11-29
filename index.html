@@ -6,22 +6,56 @@
     <meta name="description" content="Lindsey Yi's Portfolio">
     <title>Lindsey Yi's Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="art.html">art</a></li>
+                <li><a href="contact.html">resume</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <h1>Hi, I'm Lindsey! Welcome to My Portfolio.</h1>
+            <h1>Hi, I'm Lindsey!<br>Welcome to My Portfolio.</h1>
             <p>Computational Media Student with a real passion for design; striving to create innovative solutions and diverse perspectives to optimize UI and product outcomes.</p>
+        </section>
+        <section>
+            <h1>My Work</h1>
+            <div class = gallery>
+                <a target="_blank" href="img.jpg">
+                    <img src="img.jpg" alt="Spotify Wrapped" width="600" height="400">
+                </a>
+                <div class="desc">Spotify Wrapped</div>
+            </div>
+            <div class = gallery>
+                <a target="_blank" href="https://aniekas.github.io/atlantafoodfinder.github.io/members.htmls">
+                    <img src="img.jpg" alt="Atlanta Food Finders" width="600" height="400">
+                </a>
+                <div class="desc">Atlanta Food Finders</div>
+            </div>
+            <div class = gallery>
+                <a target="_blank" href="img.jpg">
+                    <img src="img.jpg" alt="Nutrinums" width="600" height="400">
+                </a>
+                <div class="desc">Nutrinums</div>
+            </div>
+        </section>
+        <section>
+            <h1>Thanks for stopping by.</h1>
+            <h3>Send me a message</h3>
+            <form action="lindseyyi08@gmail.com">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="message">Message</label><br>
+                <input type="text" id="message" name="message"><br><br>
+                <input type="submit" value="Submit"><br>
+            </form>
         </section>
     </main>
 
