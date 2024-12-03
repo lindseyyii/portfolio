@@ -6,53 +6,56 @@
     <meta name="description" content="Lindsey Yi's Portfolio">
     <title>Lindsey Yi's Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Tenor+Sans' rel='stylesheet'>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="art.html">art</a></li>
-                <li><a href="contact.html">resume</a></li>
+                <li class="left"><a href="index.html">Portfolio</a></li>
+                <li class="right"><a href="about.html">About</a></li>
+                <li class="right"><a href="art.html">Art</a></li>
+                <li class="right"><a href="/static/Resume.docx%20(3).pdf">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Hi, I'm Lindsey!<br>Welcome to My Portfolio.</h1>
+        <div>
+            <img src="/static/bg.png" alt="bg" style="width: 80%; height: auto; display: block; margin: 0 auto;">
+        </div>
+        <section>
             <p>Computational Media Student with a real passion for design; striving to create innovative solutions and diverse perspectives to optimize UI and product outcomes.</p>
             <p>I’m an aspiring UI/UX designer studying Computational Media (with a concentration in People/Interaction Design) at Georgia Tech. My passion in this thread started in my high-school's Literary Magazine, The Muse, operating as the Graphic Design Editor-in-Chief. 
                 <br>From there, I developed a wide range of skills and created a variety in projects using Adobe Photoshop, Adobe Indesign, Adobe Illustrator, Canva, and Weebly. Now, I hope to combine my programming skills in Python and Java to delve into the tech landscape and bring my designs to life. </p>
         </section>
         <section>
-            <h1>My Work</h1>
+            <h1>FEATURED WORK</h1>
             <div class=gallery>
                 <a target="_blank" href="img.jpg">
-                    <img src="img.jpg" alt="Spotify Wrapped" width="600" height="400">
+                    <img src="/static/spotify.png" alt="Spotify Wrapped" width="600" height="400">
                 </a>
                 <div class="desc">Spotify Wrapped</div>
             </div>
             <div class=gallery>
                 <a target="_blank" href="https://aniekas.github.io/atlantafoodfinder.github.io/index.html">
-                    <img src="img.jpg" alt="Atlanta Food Finders" width="600" height="400">
+                    <img src="/static/atlfoodfinder.png" alt="Atlanta Food Finders" width="600" height="400">
                 </a>
                 <div class="desc">Atlanta Food Finders</div>
             </div>
             <div class=gallery>
-                <a target="_blank" href="img.jpg">
-                    <img src="img.jpg" alt="Nutrinums" width="600" height="400">
+                <a target="_blank" href="/static/Group%206%20Presentation-1.pdf">
+                    <img src="/static/NutriNums.png" alt="Nutrinums" width="600" height="400">
                 </a>
                 <div class="desc">Nutrinums</div>
             </div>
         </section>
-        <section>
-            <h1>Thanks for stopping by.</h1>
+        <div>
+        <section style="text-align: center;">
+            <h1>CONTACT ME.</h1>
             <h3>Send me a message</h3>
-            <form action="mailto:lindseyyi08@gmail.com">
+            <form action="mailto:lindseyyi08@gmail.com" style="align-items: center;">
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name"><br>
                 <label for="message">Message</label><br>
@@ -60,6 +63,7 @@
                 <input type="submit" value="Submit"><br>
             </form>
         </section>
+        </div>
     </main>
 
     <footer>

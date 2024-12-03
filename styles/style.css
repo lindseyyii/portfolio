@@ -1,41 +1,53 @@
 body {
-    font-family: 'Tenor Sans', sans-serif;
-    margin: 0;
+    font-family: 'Times New Roman', sans-serif;
+    margin: 00;
     padding: 0;
-    background-color: #e4dddd;
+    background-color: white;
+    font-size: 20px;
+}
+main {
+    padding: 50px;
+    margin
 }
 header {
-    background: #e4dddd;
+    background: white;
     color: #000000;
     padding: 10px;
-    border: 1px solid black;
 }
+
 header nav ul {
+    display: flex;
+    justify-content: space-between; /* Separate the left and right groups */
+    align-items: center; /* Align items vertically */
     list-style-type: none;
-    padding: 0;
+    padding: 20;
 }
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
+
+header nav ul .left {
+    margin-right: auto; /* Pushes "Portfolio" to the left */
 }
+
+header nav ul .right {
+    margin-right: 20px; /* Adds space between right-side items */
+}
+
 header nav ul li a {
     color: #000000;
     text-decoration: none;
 }
+
 footer {
     background: #e4dddd;
     color: #000000;
     text-align: center;
     padding: 10px;
 }
-main {
-    padding: 20px;
-}
-h1 {
+h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
     color: #333;
     left: 20%;
-    font-family: 'Inknut Antiqua', sans-serif;
     font-size: 80px;
+    text-align: center;
 }
 .gallery {
     margin: 5px;
@@ -54,4 +66,18 @@ h1 {
 .desc {
     padding: 15px;
     text-align: center;
+}
+.art {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+.layout {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
 }
