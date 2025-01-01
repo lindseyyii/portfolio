@@ -1,39 +1,50 @@
 body {
-    font-family: 'Times New Roman', sans-serif;
-    margin: 00;
-    padding: 0;
-    background-color: white;
-    font-size: 20px;
+    margin: 0;
+    font-family: 'Tenor Sans', sans-serif;
+    background: linear-gradient(135deg, #f3d5fa, #a8c8ff, #d6e8ff);
+    background-size: 300% 300%;
+    animation: gradientBackground 10s ease infinite;
+    color: white;
 }
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 main {
     padding: 50px;
     margin
 }
-header {
-    background: white;
-    color: #000000;
-    padding: 10px;
-}
 
-header nav ul {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: space-between; /* Separate the left and right groups */
-    align-items: center; /* Align items vertically */
-    list-style-type: none;
-    padding: 20;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 }
 
-header nav ul .left {
+nav ul .left {
     margin-right: auto; /* Pushes "Portfolio" to the left */
 }
 
-header nav ul .right {
+nav ul .right {
     margin-right: 20px; /* Adds space between right-side items */
 }
 
-header nav ul li a {
-    color: #000000;
+nav ul li a {
     text-decoration: none;
+    font-family: 'Tenor Sans', sans-serif;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d6e8ff;
 }
 
 footer {
@@ -44,10 +55,10 @@ footer {
 }
 h1, h2 {
     font-family: 'Cormorant Garamond', serif;
-    color: #333;
-    left: 20%;
-    font-size: 80px;
+    font-size: 4rem;
     text-align: center;
+    margin-top: 20vh;
+    font-weight: 700;
 }
 .gallery {
     margin: 5px;
