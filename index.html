@@ -6,72 +6,101 @@
     <meta name="description" content="Lindsey Yi's Portfolio">
     <title>Lindsey Yi's Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Tenor+Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Genos:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <div class="vid-container">
+        <section class="vid-container">
             <video autoplay muted loop playsinline>
                 <source src="static/bg.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <nav>
                 <ul>
-                    <li class="left"><a href="index.html">Portfolio</a></li>
-                    <li class="right"><a href="about.html">About</a></li>
-                    <li class="right"><a href="art.html">Art</a></li>
-                    <li class="right"><a href="/static/Resume.docx.pdf">Resume</a></li>
+                    <li class="left"><a href="index.html">PORTFOLIO</a></li>
+                    <li class="right"><a href="about.html">ABOUT</a></li>
+                    <li class="right"><a href="art.html">ART</a></li>
+                    <li class="right"><a href="/static/Resume.docx.pdf">RESUME</a></li>
                 </ul>
             </nav>
-            <h1>Lindsey Yi</h1>
-            <h3>blurb...</h3>
-        </div>
-        <section>
-            <img src="me.png">
-            <h2>About me</h2>
-            <p>Computational Media Student with a real passion for design; striving to create innovative solutions and diverse perspectives to optimize UI and product outcomes.</p>
-            <p>I’m an aspiring UI/UX designer studying Computational Media (with a concentration in People/Interaction Design) at Georgia Tech. My passion in this thread started in my high-school's Literary Magazine, The Muse, operating as the Graphic Design Editor-in-Chief. 
-                <br>From there, I developed a wide range of skills and created a variety in projects using Adobe Photoshop, Adobe Indesign, Adobe Illustrator, Canva, and Weebly. Now, I hope to combine my programming skills in Python and Java to delve into the tech landscape and bring my designs to life. </p>
+            <h1 style="margin-top: 30vh;">Lindsey Yi</h1>
+            <h3>Computational Media student at Georgia Tech<br>striving to create innovative solutions and optimize UI</h3>
         </section>
-        <section>
-            <h1>Recent Work</h1>
-            <div class=gallery>
-                <a target="_blank" href="https://aniekas.github.io/team17.github.io/index.html">
-                    <img src="/static/spotify.png" alt="Spotify Wrapped" width="600" height="400">
-                </a>
-                <div class="desc">Spotify Wrapped</div>
+        <section class="about-container vid-container">
+            <video autoplay muted loop playsinline>
+                <source src="static/bg1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="arch-image-container">
+                <img src="static/me.jpeg">
             </div>
-            <div class=gallery>
-                <a target="_blank" href="https://aniekas.github.io/team17.github.io/index.html">
-                    <img src="/static/atlfoodfinder.png" alt="Atlanta Food Finders" width="600" height="400">
-                </a>
-                <div class="desc">Atlanta Food Finders</div>
-            </div>
-            <div class=gallery>
-                <a target="_blank" href="/static/Group%206%20Presentation-1.pdf">
-                    <img src="/static/NutriNums.png" alt="Nutrinums" width="600" height="400">
-                </a>
-                <div class="desc">Nutrinums</div>
+            <div class="text-container">
+                <h2 style="text-align: left; margin: 90px 55px 55px 55px">About me</h2>
+                <h4 style="text-align: left;">I’m an aspiring UI/UX designer studying Computational Media (with a concentration in People/Interaction Design) at Georgia Tech. My passion in this thread started in my high-school's Literary Magazine, The Muse, operating as the Graphic Design Editor-in-Chief. 
+                <br><br>From there, I developed a wide range of skills and created a variety in projects using Adobe Photoshop, Adobe Indesign, Adobe Illustrator, Canva, and Weebly. Now, I hope to combine my programming skills in Python and Java to delve into the tech landscape and bring my designs to life. </h4>
+        
             </div>
         </section>
-        <section style="text-align: center;">
-            <h1>CONTACT ME.</h1>
-            <h3>Send me a message</h3>
-            <form action="mailto:lindseyyi08@gmail.com" style="align-items: center;">
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="message">Message</label><br>
-                <input type="text" id="message" name="message"><br><br>
-                <input type="submit" value="Submit"><br>
-            </form>
+        <section style="height: 100vh;">
+            <h2 style="color: #5271ff; text-shadow: 0px 0px 5px #3a59e1;">Recent Work</h2>
+            <div class="carousel">
+            <button class="carousel-btn left-btn">&lt;</button>
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <a target="_blank" href="https://aniekas.github.io/team17.github.io/index.html">
+                        <img src="/static/spotify.png" alt="Spotify Wrapped" style="width: 350px;">
+                    </a>
+                    <div class="desc">Spotify Wrapped</div>
+                </div>
+                <div class="carousel-item">
+                    <a target="_blank" href="https://aniekas.github.io/team17.github.io/index.html">
+                        <img src="/static/atlfoodfinder.png" alt="Atlanta Food Finders" style="width: 350;">
+                    </a>
+                    <div class="desc">Atlanta Food Finders</div>
+                </div>
+                <div class="carousel-item">
+                    <a target="_blank" href="/static/Group%206%20Presentation-1.pdf">
+                        <img src="/static/NutriNums.png" alt="Nutrinums" style="width: 350;">
+                    </a>
+                    <div class="desc">Nutrinums</div>
+                </div>
+                <div class="carousel-item">
+                    <a target="_blank" href="https://thenhsmuse.weebly.com/concrete.html">
+                        <img src="/static/cover.png" alt="Concrete" style=" width: auto;height:350px">
+                    </a>
+                    <div class="desc">Concrete</div>
+                </div>
+            </div>
+            <button class="carousel-btn right-btn">&gt;</button>
+            </div>
+        </section>
+        <section class="vid-container contact-container" style="height: 110vh;">
+            <video autoplay muted loop playsinline>
+            <source src="static/bg1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+            <div class="form-container">
+                <h2>Contact me</h2>
+                <form action="mailto:lindseyyi08@gmail.com">
+                  <label for="name"></label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name">
+                  <label for="gmail"></label>
+                  <input type="text" id="gmail" name="gmail" placeholder="Enter your gmail">
+                  <label for="message"></label>
+                  <textarea id="message" name="message" rows="4" placeholder="Type your message"></textarea>
+                  
+                  <button type="submit">send</button>
+                </form>
+              </div>
+
+              <footer>
+                <p>© 2024 Lindsey Yi</p>
+            </footer>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Lindsey Yi</p>
-    </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
