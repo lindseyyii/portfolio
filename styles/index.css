@@ -10,17 +10,17 @@
 .carousel {
   position: relative;
   width: 90%;
-  height: 600px;
+  height: 700px;
   margin: 50px auto;
-  align-items: center;
+  align-items: baseline;
   overflow-x: hidden;
   overflow-y: hidden;
-  margin-top: 80px;
 }
 
 /* Carousel Track */
 .carousel-track {
   display: flex;
+  height: 210px;
   transition: transform 0.5s ease-in-out; /* Smooth movement for transitions */
   justify-content: center;
 }
@@ -93,11 +93,13 @@
   }
 
 .desc {
-    padding: 15px;
+    margin: 30px;
+    padding: 8px;
     text-align: center;
     color: #5271ff;
     font-family: 'Genos', sans-serif;
     font-weight: 600;
+    border-top: 1.5px solid #5271ff;
 }
 .art {
     width: 250px;
