@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Agrandir', sans-serif;
+    color: white;
+}
+
+.vid-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensures video doesn't overflow the container */
+}
+
+.vid-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensures the video stays in the background */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-bottom: 2px solid white; /* Adds a white thin line under the nav */
+}
+
+nav ul .left {
+    margin-right: auto; /* Pushes "Portfolio" to the left */
+}
+
+nav ul .right {
+    margin-right: 35px; /* Adds space between right-side items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Genos', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 3px #ffffff;
+    font-size: 1.6em;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #6a9ada;
+}
+
+footer {
+    background: rgba(9, 7, 108, 0.20);
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: white 0px 0px 5px;
+    text-align: center;
+    padding: 5px;
+}
+h1 {
+    font-family: 'Gantari', sans-serif;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 28vh;
+    margin-bottom: 5vh;
+    font-weight: 700;
+    text-shadow: 0 0 5px #ffffff;
+    letter-spacing: -3px;
+}
+h2 {
+    font-family: 'Gantari', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-weight: 700;
+    text-shadow: 0 0 6px #ffffff;
+    letter-spacing: -3px;
+    margin-top: 12vh;
+}
+
+h3 {
+    font-family: 'Gantari', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3.5vh;
+    font-weight: 400;
+    text-shadow: 0 0 2px #ffffff;
+    letter-spacing: 1.2px;
+    line-height: 128%;
+    width: 53%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+    
+
+h4 {
+    font-family: 'Gantari', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 3.5vh;
+    font-weight: 400;
+    text-shadow: 0 0 2px #ffffff;
+    letter-spacing: 1.1px;
+    line-height: 30px;
+    margin: 55px;
+}

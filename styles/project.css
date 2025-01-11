@@ -1,0 +1,82 @@
+img {
+    width: 300px;
+}
+
+.accordion-container {
+    justify-content: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns:28% 28% 28%;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.accordion-card {
+    width: 330px;
+    background-color: rgb(255, 255, 255, 0.1);
+    justify-content: center;
+    display: grid;
+    cursor: pointer;
+    box-shadow: white 0px 0px 7px;
+    height: fit-content;
+    position: relative;
+}
+  
+.accordion-card__header {
+    color: #202020;
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+}
+  
+.accordion-card__content {
+    font-family: 'Genos', sans-serif;
+    padding: 0px 15px 20px 15px;
+    color: #ffffff;
+    display: none;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+  
+.active {
+    display: block;
+}
+
+.process-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.process-cards {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 22% 3% 22% 3% 22% 3% 22%;
+    justify-content: center;
+}
+.card {
+    background-color: #F6EAf8;
+    color: #3a59e1;
+    height: 400px;
+    width: auto;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Genos', sans-serif;
+    font-size: 18px;
+}
+
+.card-header {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.icon {
+    color: #3a59e1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    position: relative;
+    top: 40%;
+}

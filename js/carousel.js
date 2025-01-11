@@ -14,7 +14,7 @@ const totalItems = items.length;
 // Position carousel track to show the centered item
 const updateTrackPosition = () => {
     const offset = 
-      -(currentIndex * itemWidth) + (carouselTrack.offsetWidth - itemWidth) / visibleCount;
+      -(currentIndex * itemWidth) + (carouselTrack.offsetWidth - itemWidth * 1.65) / visibleCount;
     carouselTrack.style.transform = `translateX(${offset}px)`;
   };
   
@@ -24,8 +24,14 @@ const moveCarousel = (direction) => {
     currentIndex = (currentIndex + 1) % totalItems; // Circular indexing
     currentFocus = (currentFocus + 1) % totalItems;
   } else if (direction === 'left') {
-    currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Circular indexing
+    currentIndex = (currentIndex - 1 + totalItems) % total; // Circular indexing
     currentFocus = (currentFocus - 1 + totalItems) % totalItems;
+    //currentIndex = currentIndex - 1;
+    //if(currentIndex<0) {
+    //   currentIndex=totalItems-1;
+    //}
+    //currentFocus = currentFocus - 1;
+    //if (current)
   }
   updateTrackPosition();
   updateFocus();
