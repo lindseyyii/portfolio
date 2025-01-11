@@ -107,3 +107,8 @@ h4 {
     line-height: 30px;
     margin: 55px;
 }
+
+img {
+    height: auto;
+    width: 200px;
+}
