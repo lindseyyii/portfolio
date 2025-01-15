@@ -14,7 +14,7 @@ const totalItems = items.length;
 // Position carousel track to show the centered item
 const updateTrackPosition = () => {
     const offset = 
-      -(currentIndex * itemWidth) + (carouselTrack.offsetWidth - itemWidth * 1.65) / visibleCount;
+      -(currentIndex * itemWidth) + (carouselTrack.offsetWidth - itemWidth*.27) / visibleCount;
     carouselTrack.style.transform = `translateX(${offset}px)`;
   };
   
