@@ -1,5 +1,5 @@
 img {
-    width: 300px;
+    width: 250px;
 }
 
 .accordion-container {
@@ -13,7 +13,7 @@ img {
 }
 
 .accordion-card {
-    width: 330px;
+    width: fit-content;
     background-color: rgb(255, 255, 255, 0.1);
     justify-content: center;
     display: grid;

@@ -24,14 +24,8 @@ const moveCarousel = (direction) => {
     currentIndex = (currentIndex + 1) % totalItems; // Circular indexing
     currentFocus = (currentFocus + 1) % totalItems;
   } else if (direction === 'left') {
-    currentIndex = (currentIndex - 1 + totalItems) % total; // Circular indexing
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Circular indexing
     currentFocus = (currentFocus - 1 + totalItems) % totalItems;
-    //currentIndex = currentIndex - 1;
-    //if(currentIndex<0) {
-    //   currentIndex=totalItems-1;
-    //}
-    //currentFocus = currentFocus - 1;
-    //if (current)
   }
   updateTrackPosition();
   updateFocus();

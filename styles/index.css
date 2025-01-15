@@ -50,6 +50,7 @@
   transform: scale(1.4); /* Makes the center item bigger */
   font-size: 1.5rem;
   opacity: 1;
+  z-index: 5;
 }
 
 /* Buttons */
@@ -93,27 +94,13 @@
   }
 
 .desc {
-    margin: 30px;
-    padding: 8px;
-    text-align: center;
-    color: #5271ff;
-    font-family: 'Genos', sans-serif;
-    font-weight: 600;
-    border-top: 1.5px solid #5271ff;
-}
-.art {
-    width: 250px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-}
-.layout {
-    width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
+  margin: 30px;
+  padding: 8px;
+  text-align: center;
+  color: #5271ff;
+  font-family: 'Genos', sans-serif;
+  font-weight: 600;
+  border-top: 1.5px solid #5271ff;
 }
 
 .arch-image-container {
