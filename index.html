@@ -5,102 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lindsey Yi's Portfolio">
     <title>Lindsey Yi's Portfolio</title>
-    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Genos:wght@500;600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"></head>
 <body>
     <main>
-        <section class="vid-container">
-            <video autoplay muted loop playsinline>
-                <source src="static/bg.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="sticky">
-                <nav>
-                    <ul>
-                        <li class="left"><a target="_blank" href="index.html">PORTFOLIO</a></li>
-                        <li class="right"><a target="_blank" href="about.html">ABOUT</a></li>
-                        <li class="right"><a target="_blank" href="art.html">ART</a></li>
-                        <li class="right"><a target="_blank" href="/static/Resume.docx.pdf">RESUME</a></li>
-                    </ul>
-                </nav>
+        <div>
+            <nav>
+                <ul>
+                    <li class="left"><a href="index.html">lindsey</a></li>
+                    <li class="right"><a href="about.html">about</a></li>
+                    <li class="right"><a href="art.html">art</a></li>
+                    <li class="right"><a href="/static/Resume.docx.pdf">resume</a></li>
+                    <li class="right"><a href="https://www.linkedin.com/in/lindseyyi">linkedin</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="one">
+            <h1>Hi, I'm Lindsey. Welcome to my Portfolio.<br>I'm a(n) [&nbsp;<span class="rotating-text">
+                <span>student</span>
+                <span>designer</span>
+                <span>developer</span>
+                <span>storyteller</span>
+                <span>innovator</span>
+                <span>artist</span>
+                <span>creator</span>
+                <span>strategist</span>
+                </span>
+                ]
+            </h1>
+        </div>
+        <div class="two two-right">
+            <div class="text"><h2>Spotify Wrapped</h2>
+                <h4>A collaborative web application project using Spotify's API that allows users to see their music wrapped.</h4>
             </div>
-            <h1>Lindsey Yi</h1>
-            <h3>Computational Media student at Georgia Tech striving to create innovative solutions and optimize UI</h3>
-        </section>
-        <section class="about-container vid-container">
-            <video autoplay muted loop playsinline>
-                <source src="static/bg1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="arch-image-container">
-                <img src="static/me.jpeg">
+            <div class="graphic iphone">
+                <a href="spotifywrapped.html"> <img src="/static/iphone.png"> </a>
             </div>
-            <div class="text-container">
-                <h2 style="text-align: left; margin: 90px 55px 55px 55px">About me</h2>
-                <h4 style="text-align: left;">I’m an aspiring UI/UX designer studying Computational Media (with a concentration in People/Interaction Design) at Georgia Tech. My passion in this thread started in my high-school's Literary Magazine, The Muse, operating as the Graphic Design Editor-in-Chief. 
-                <br><br>From there, I developed a wide range of skills and created a variety in projects using Adobe Photoshop, Adobe Indesign, Adobe Illustrator, Canva, and Weebly. Now, I hope to combine my programming skills in Python and Java to delve into the tech landscape and bring my designs to life. </h4>
-        
+        </div>
+
+        <div class="two two-left">
+            <div class="text"><h2>Atlanta Food Finders</h2>
+                <h4>A web application project using Django and Google Maps API that helps users find restaraunts in Atlanta</h4>
             </div>
-        </section>
-        <section style="height: 100vh;">
-            <h2 style="color: #5271ff; text-shadow: 0px 0px 3px #3a59e1;">Recent Work</h2>
-            <div class="carousel">
-            <button class="carousel-btn left-btn">&lt;</button>
-            <div class="carousel-track">
-                <div class="carousel-item">
-                    <a target="_blank" href="spotifywrapped.html">
-                        <img src="/static/spotify.png" alt="Spotify Wrapped" style="width: 325px;">
-                    </a>
-                    <div class="desc">Spotify Wrapped</div>
+            <div class="graphic">
+                <a href="atlantafoodfinders.html">
+                <div class="ipad">
+                    <img src="/static/ipad.png" class="ipadimg">
+                    <iframe class="ipadvid"
+                            src="https://www.youtube.com/embed/cRzXEpTKT_Y?start=30&autoplay=1&loop=1&playlist=cRzXEpTKT_Y&controls=0&mute=1&modestbranding=1&showinfo=0"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                    </iframe>
                 </div>
-                <div class="carousel-item">
-                    <a target="_blank" href="atlantafoodfinders.html">
-                        <img src="/static/atlfoodfinder.png" alt="Atlanta Food Finders" style="width: 325;">
-                    </a>
-                    <div class="desc">Atlanta Food Finders</div>
-                </div>
-                <div class="carousel-item">
-                    <a target="_blank" href="/static/Group%206%20Presentation-1.pdf">
-                        <img src="/static/NutriNums.png" alt="Nutrinums" style="width: 325;">
-                    </a>
-                    <div class="desc">Nutrinums</div>
-                </div>
-                <div class="carousel-item">
-                    <a target="_blank" href="concrete.html">
-                        <img src="/static/cover.png" alt="Concrete" style=" width: auto;height:325px">
-                    </a>
-                    <div class="desc">Concrete</div>
-                </div>
+                </a>
             </div>
-            <button class="carousel-btn right-btn">&gt;</button>
-            </div>
-        </section>
-        <section class="vid-container contact-container" style="height: 110vh;">
-            <video autoplay muted loop playsinline>
-            <source src="static/bg1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-            <div class="form-container">
-                <h2 style="text-align: left; padding-left: 90px;">Contact me</h2>
-                <form action="mailto:lindseyyi08@gmail.com">
-                  <label for="name"></label>
-                  <input type="text" id="name" name="name" placeholder="Enter your name">
-                  <label for="gmail"></label>
-                  <input type="text" id="gmail" name="gmail" placeholder="Enter your gmail">
-                  <label for="message"></label>
-                  <textarea id="message" name="message" rows="4" placeholder="Type your message"></textarea>
-                  
-                  <button type="submit">send</button>
-                </form>
-            </div>
-            <footer>
-                <p>© 2024 Lindsey Yi</p>
-            </footer>
-            </section>
-            
+        </div>
+
+        <div class="two two-right">
+            <div class="text"><h2>Concrete</h2>
+            <h4>The Muse's 20th Literary Magazine Edition, awarded for a CSPA Gold Crown in the Hybrid Magazine Division.</h4>
+        </div>
+        <div class="graphic iphone">
+            <a href="spotifywrapped.html"> <img src="/static/cover.png"> </a>
+        </div>
+        </div>
+
+        <footer>
+            <p>© 2024 Lindsey Yi</p>
+        </footer>
     </main>
 
 

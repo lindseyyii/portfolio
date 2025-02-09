@@ -1,34 +1,17 @@
 body {
     margin: 0;
-    font-family: 'Agrandir', sans-serif;
+    background-color: black;
     color: white;
-}
-
-.vid-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Ensures video doesn't overflow the container */
-}
-
-.vid-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Ensures the video stays in the background */
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: space-between;
     padding: 1rem 3rem;
-    border-bottom: 2px solid white; /* Adds a white thin line under the nav */
+    margin: 30px;
 }
 
 nav ul .left {
@@ -41,45 +24,31 @@ nav ul .right {
 
 nav ul li a {
     text-decoration: none;
-    font-family: 'Genos', sans-serif;
-    color: white;
-    text-shadow: 0px 0px 3px #ffffff;
+    font-family: 'Nunito', serif;
+    color: grey;
     font-size: 1.6em;
-    transition: color 0.3s ease;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 nav ul li a:hover {
-    color: #6a9ada;
+    color: dark grey;
 }
 
 footer {
-    background: rgba(9, 7, 108, 0.20);
+    background: #141414;
     color: rgba(255, 255, 255, 0.7);
-    text-shadow: white 0px 0px 5px;
+    text-shadow: white 0px 0px 4px;
     text-align: center;
     padding: 5px;
 }
-h1 {
-    font-family: 'Gantari', sans-serif;
-    font-size: 120px;
-    text-align: center;
-    margin-top: 28vh;
-    margin-bottom: 5vh;
-    font-weight: 700;
-    text-shadow: 0 0 5px #ffffff;
-    letter-spacing: -3px;
+
+h1, h2 {
+    font-family: 'Nunito', serif;
+    text-shadow: 0 0 1px #ffffff;
 }
-h2 {
-    font-family: 'Gantari', sans-serif;
-    font-size: 80px;
-    text-align: center;
-    margin-bottom: 5vh;
-    font-weight: 700;
-    text-shadow: 0 0 6px #ffffff;
-    letter-spacing: -3px;
-    margin-top: 12vh;
-}
+
+h1 { font-size: 60px; text-align: center;}
+h2 { font-size: 50px;}
 
 h3 {
     font-family: 'Gantari', sans-serif;
@@ -97,13 +66,134 @@ h3 {
     
 
 h4 {
-    font-family: 'Gantari', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 3.5vh;
-    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
     text-shadow: 0 0 2px #ffffff;
-    letter-spacing: 1.1px;
     line-height: 30px;
-    margin: 55px;
+    color: grey;
+    line-height: 1.5;
+}
+
+.one {
+    height: 75vh;
+    display: grid;
+    place-items: center;
+}
+
+.two-right {
+    flex-direction: row;
+    text-align:left;
+}
+
+.two-left {
+    flex-direction: row-reverse;
+    text-align:right;
+}
+
+.text {
+    width: 50%;
+    margin: 50px 25px 0px 100px;
+}
+.graphic {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.iphone img {
+    width: 250px;
+    height: auto;
+}
+.iphone img {
+  transition: transform 0.5s ease-in-out;
+}
+.iphone img:hover {
+  transform: scale(1.1) rotate(.5deg); /* Slight zoom effect on hover */
+}
+
+.ipad {
+   position: relative;
+   width: 600px; /* Adjust based on your iPad PNG size */
+   height: 400px; /* Adjust accordingly */
+ }
+
+ .ipadvid {
+   position: absolute;
+   top: 3%; /* Adjust so it fits the screen area */
+   bottom: 3%;
+   left: 3%;
+   right: 5%;
+   z-index: 1; /* Ensures it's behind the frame */
+   width: 550px;
+   height: 380px;
+ }
+
+ .ipadimg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; /* Ensures the frame covers everything */
+   height: 100%;
+   z-index: 2; /* Ensures the frame is on top */
+ }
+
+
+.two {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 125px;
+    gap: 0px;
+    height: 70vh;
+}
+
+.rotating-text {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    height: 1.35em;
+}
+
+.rotating-text span {
+    display: block;
+    animation: scrollup 10s linear infinite;
+}
+
+@keyframes scrollup {
+    0%, 10% {
+      transform: translateY(0);
+      color: #FF9B9B;
+    }
+    12.5%, 22.5% {
+      transform: translateY(-100%);
+      color: #A0C4FF;
+    }
+    25%, 35% {
+      transform: translateY(-200%);
+      color: #caffbf;
+    }
+    37.5%, 47.5% {
+      transform: translateY(-300%);
+      color: #FFAEE1;
+    }
+    50%, 60% {
+      transform: translateY(-400%);
+      color: #fdffb6;
+    }
+    62.5%, 72.5% {
+      transform: translateY(-500%);
+      color: #bdb2ff;
+    }
+    75%, 85% {
+      transform: translateY(-600%);
+      color: #ffd6a5;
+    }
+    87.5%, 97.5% {
+      transform: translateY(-700%);
+      color: #9BF6FF;
+    }
+    100% {
+      transform: translateY(0);
+    }
 }
