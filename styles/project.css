@@ -117,12 +117,8 @@ img {
 	gap: var(--card-margin);
 }
 
-.card {
-	outline: var(--outline-width) solid lime;
-}
-
 .card__content {
-	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0.3em 2em rgba(0, 0, 0, 0.2), 0 1em 2em rgba(0, 0, 0, 0.1);
 	background: rgb(255, 255, 255);
 	color: rgb(10, 5, 7);
 	border-radius: 1em;
@@ -146,6 +142,7 @@ img {
 	display: grid;
 	gap: 1em;
 	place-items: start;
+    margin: 50px;
 }
 
 .card__content > figure {
