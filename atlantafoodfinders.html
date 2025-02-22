@@ -11,116 +11,209 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"></head>
+    </head>
     <body>
-    <main>
-        <div>
-            <nav>
-                <ul>
-                    <li class="left"><a href="index.html">lindsey</a></li>
-                    <li class="right"><a href="about.html">about</a></li>
-                    <li class="right"><a href="art.html">art</a></li>
-                    <li class="right"><a href="/static/Resume.docx.pdf">resume</a></li>
-                    <li class="right"><a href="https://www.linkedin.com/in/lindseyyi">linkedin</a></li>
+        <main>
+            <div>
+                <nav>
+                    <ul>
+                        <li class="left"><a target="_blank" href="index.html">lindsey</a></li>
+                        <li class="right"><a target="_blank" href="about.html">about</a></li>
+                        <li class="right"><a target="_blank" href="art.html">art</a></li>
+                        <li class="right"><a target="_blank" href="/static/Resume.docx.pdf">resume</a></li>
+                        <li class="right"><a target="_blank" href="https://www.linkedin.com/in/lindseyyi">linkedin</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <section style="margin: 70px 150px 50px 150px;;">
+            <div>
+                <h5>AUG-OCT 2024</h5>
+                <hr style="border: 1px solid grey; width: 85vw; margin: 20px auto; position: relative; left: -50px;">
+                <div style="display: flex; margin-bottom: 10px;">
+                    <h2>Atlanta Food Finder</h2>
+                    <div class="parent">
+                        <img class="image5" src="static\afflogo.png">
+                        <img class="image6" src="static\affwords.png">
+                    </div>
+                </div>
+                <h4desc>A collaborative web application project that allows users to view their Spotify listening statistics summary website using Django and the Spotify API. Created with features such as seamless user authentication, immersive and engaging designs, personalization, device compatibility, and much more.</h4desc>
+            </div>
+            <section class="info-container">
+                <div class="info-cards">
+                    <div class="infocard"><div class="infocard-header">My Role</div>
+                    Front-end Development (User Authentication and Favorites)
+                    </div>
+                    <span class="icon"></span>
+
+                    <div class="infocard"><div class="infocard-header">Tools Used</div>
+                    Figma, pxCode, Trello, Django, Google API, GitHub
+                    </div>
+                    <span class="icon"></span>
+
+                    <div class="infocard"><div class="infocard-header">Team</div>
+                    Scrum Master/Back-end,<br>
+                    <div style="letter-spacing: -.3px;">Product Owner/Back-end,<br></div>
+                    Front-end (2)
+                    </div>
+                    <span class="icon"></span>
+
+                    <div class="infocard"><div class="infocard-header">Skills</div>
+                    Interaction Design, User Authentication, HTML/CSS/JS
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Our Project User Stories</h2>
+                <ul id="cards">
+                    <li class="card" id="card_1">
+                        <div class="card__content">
+                            <div>
+                                <h2>User Authentication</h2>
+                                <p>As a user, I want to register an account so that I can access personalized features.
+                                <br><br>As a registered user, I want to log in so that I can access my profile and account data.</p>
+                            </div>
+                            <figure>
+                                <div class="ipad">
+                                    <img src="static/aff/a.png" class="ipad" style="width: 60%; height: 80%; left: 50px;">
+                                </div>
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="card" id="card_2">
+                        <div class="card__content">
+                            <div>
+                                <h2>Restaurant Search</h2>
+                                <p>
+                                    As a user, I want to search for restaurants by name, cuisine type, or location so that I can find places to eat that match my preferences.
+                                    <br><br>As a user, I want to filter search results by ratings and distance so that I can find the best and closest options.
+                                </p>
+                            </div>
+                            <figure>
+                                <div class="ipad">
+                                    <img src="static/aff/b.png" class="ipad" style="width: auto; height: 300px; left: 50px;">
+
+                                </div>
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="card" id="card_3">
+                        <div class="card__content">
+                            <div>
+                                <h2>Geolocation</h2>
+                                <p>
+                                    As a user, I want to view restaurant locations on an interactive Google Map, so that I can easily visualize where they are.
+                                    <br><br>As a user, I want to clock on a restaurant marker on the map to see detailed information about that restaurant.
+                                </p>
+                            </div>
+                            <figure>
+                                <div class="ipad">
+                                    <div class="parent">
+                                        <img class="image3" src="static\aff\d.png" style="box-shadow: rgb(99, 99, 99) 0 0 4px; width: 300px;">
+                                        <img class="image4" src="static\aff\c.png" style="box-shadow: rgb(146, 146, 146) 0 0 3px; width: 250px;">
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </li> 
+                    <li class="card" id="card_4">
+                        <div class="card__content">
+                            <div>
+                                <h2>Favorites</h2>
+                                <p>
+                                    As a user, I want to save my favorite restaurants so that I can easily find them later.
+                                    <br><br>As a user, I want to access my list of favorite restaurants from my profile so that I can quickly revisit them.
+                                </p>
+                            </div>
+                            <figure>
+                                <div class="parent">
+                                    <img class="image3" src="static\aff\e.png" style="box-shadow: rgb(99, 99, 99) 0 0 4px;">
+                                    <!-- <img class="image4" src="static\contact.png" style="box-shadow: rgb(146, 146, 146) 0 0 3px;"> -->
+                                </div>
+                            </figure>
+                        </div>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-                <h1 style="margin-top: 15vh;">Atlanta<br>Food Finders</h1>
-                <h3> A collaborative web application project using Django and Google Maps API that helps users find restaraunts in Atlanta</h3>
             </section>
-            <section style="height: 100vh;">
-                <h2 style="margin-top: 8vh; color: #5271ff; text-shadow: 0px 0px 3px #3a59e1;">Watch our demo</h2>
+            <section>
+                <h2>The Process</h2>
+                <div style="margin: 0 30px 0 60px">
+                <div class="twop twop-right">
+                    <div class="textp"><h3 style="margin-bottom: 20px;">Planning</h3>
+                        <h4desc>
+                            This planning phase involved outlining project goals. We initiated a shared Google Calendar, Trello board, and Discord server for communication.
+                            At each sprint, our team discussed the user stories that would be addressed in the sprint review and what could be improved. 
+                            At the end of the 1st sprint, we decided that our communication needed to improve, so we created a voice channel in the Discord called "drop-in work" where we could all hang out and work together at any time to avoid the pressure of overly-planned work sessions. This greatly increased our productivity!
+                        </h4desc>
+                    </div>
+                    <div class="graphic stack">
+                        <img class="img1" src="static\calendar.png">
+                        <img class="img2" src="static\trello.png">
+                        <img class="img3" src="static\sprint doc.png">
+                    </div>
+                </div>
+                <div style="padding: 50px;"></div>
+                <div>
+                    <h3 style="margin-bottom: 20px;">The Design Process</h3>
+                    <h4desc>
+                        To begin, we used Figma to create a basic user flow and wireframes for the UI. 
+                        We then created a basic brand identity and applied it to the wireframes to create prototypes.
+                        The basic decisions regarding the branding and setup were made with the application's intentions and functionality in mind. 
+                        We wanted it to be clean and user-friendly, so we kept the colors and user flow simple to avoid overwhelming users. 
+                        This also involved using recognizable icons such as the filter button.
+                    </h4desc>
+                    <div style="padding: 20px;"></div>
+                    <img src="static\figmaaff.png" style="width: 70%; display: block; margin: 0 auto;">
+                    <div style="padding: 15px;"></div>
+                    <img src="static\prototypeaff.png" style="width: 70%; display: block; margin: 0 auto;">
+                </div>
+                <div style="padding: 50px;"></div>
+                <div class="twop twop-right">
+                    <div class="textp">
+                        <h3 style="margin-bottom: 20px;">Building the App</h3>
+                        <h4desc>
+                            This stage is where all of our pre-planning and delegation came in handy. 
+                            We initially struggled at first with the learning curve regarding Git and GitHub, 
+                            but we quickly learned how to use it effectively. We used the framework of the Django tutorial to initialize our project.
+                            We broke up each user story into smaller, more manageable tasks and made sure to have other team members review our code 
+                            before merging anything to the repository. This gave members a chance to share any challenges they were facing and helped us stay up to date 
+                            with our progress as well as the things our teammates were working on.
+                        </h4desc>
+                    </div>
+                    <div class="graphic stack">
+                        <img class="img1" src="static\aff\f.png" style="width: 200px; z-index: 3;">
+                        <img class="img2" src="static\spotdev.png" style="z-index: 1;">
+                    </div>
+                </div>
+                <div style="padding: 50px;"></div>
+                <div>
+                    <h3 style="margin-bottom: 20px;">Testing and Deployment</h3>
+                    <h4desc>
+                        We made sure to use Git and branches effectively to test our work before merging it into main to avoid any conflicts. 
+                        The process of testing was extensive and occurred throughout the creation of the project, rather than solely at the end.
+                    </h4desc>
+                    <div style="padding: 50px;"></div>
+                </div>
+                </div>
+            </section>
+            <section style="height: 83vh;">
+                <h2 style="margin-top: 8vh; text-shadow: 0px 0px 3px #ffffff;">Watch our demo</h2>
                 <div style="display: flex; justify-content: center; margin-bottom: 60px;">
-                    <iframe style="width: 1000px; height:500px; margin: 0 auto; box-shadow: 0px 7px 6px rgba(0,0,0,0.3);" src="https://www.youtube.com/embed/cRzXEpTKT_Y?si=XXM-fNKszHyltpDM&amp;controls=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe style="width: 1000px; height:500px; margin: 0 auto; box-shadow: 0px 7px 6px rgba(0,0,0,0.3);" src="https://www.youtube.com/embed/cRzXEpTKT_Y?si=1NE-NDQdvwtDGP7_" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
+        </section>
+
             <section class="vid-container" style="height: auto;">
-                <video autoplay muted loop playsinline>
-                    <source src="static/bg1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h2>User Stories</h2>
-                <div class="accordion-container">
-                    <div class="accordion-card">
-                        <h4 class="accordion-card__header">
-                            <img src="/static/aff/a.png">
-                        </h4>
-                        <p class="accordion-card__content">
-                            User Authentication is important because it ensures that each user has their own personalized account, allowing them to save favorites or keep track of how they have used the application.
-                        </p>
-                    </div>
-                    <div class="accordion-card">
-                        <h4 class="accordion-card__header">
-                            <img src="/static/aff/b.png">
-                        </h4>
-                        <p class="accordion-card__content">
-                            Restaurant Search gives users flexibility in how they find restaurants, optimizing options for the user.
-                        </p>
-                    </div>
-                    <div class="accordion-card">
-                        <h4 class="accordion-card__header">
-                            <img src="/static/aff/c.png">
-                        </h4>
-                        <p class="accordion-card__content">
-                            Geolocation utilizes Google Maps to show precise locations to users, allowing them to easily view which restaurants are near them.
-                        </p>
-                    </div>
-                    <div class="accordion-card">
-                        <h4 class="accordion-card__header">
-                            <img src="/static/aff/d.png">
-                        </h4>
-                        <p class="accordion-card__content">
-                            Restaurant Details is important because it allows users to get a more in-depth view of restaurants they may be interested in and make more informed decisions.
-                        </p>
-                    </div>
-                    <div class="accordion-card">
-                        <h4 class="accordion-card__header">
-                            <img src="/static/aff/e.png">
-                        </h4>
-                        <p class="accordion-card__content">
-                            Favorites is important because it allows users to easily keep track of their favorite restaurants and access their details quickly.
-                        </p>
-                    </div>
-                    <div class="accordion-card">
-                        <h4 class="accordion-card__header">
-                            <img src="/static/aff/f.png">
-                        </h4>
-                        <p class="accordion-card__content">
-                            This is important because both extra goals add an extra layer of interactivity and convenience for the user, incentivizing them to continue using the platform.
-                        </p>
-                    </div>     
-                    </div>        
-            </section>
-            <section class="process-container">
-                <h2 style="color: #5271ff; text-shadow: 0px 0px 3px #3a59e1;">The Process</h2>
-                <div class="process-cards">
-                    <div class="card"><div class="card-header">1. Planning Phase: Outlining the Project Goals</div><br>
-                        This project consisted of two sprints (1st sprint: user story A-C; 2nd sprint: user story D-F). For initial organization, the team created a shared Google Calendar, Trello board, and Discord server to ensure efficient communication.
-                        For each sprint, the team held a meeting to discuss incomplete user stories. We created a "Daily Updates" Discord channel and used tags/delegate work cards in Trello to keep each other up to date.</div>
-                    <span class="icon"><b>&rarr;</b></span>
-                    <div class="card"><div class="card-header">2. Design Phase: Creating Mockups and Prototypes</div><br>
-                        We used Figma to create a basic user flow and wireframes for the UI. We then created a basic brand identity and applied it to the wireframes to create prototypes.
-                        The basic decisions regarding the branding and setup were made with the application's intentions and functionality in mind. We wanted it to be clean and user-friendly, so we kept the colors and user flow simple to avoid overwhelming users.</div>
-                    <span class="icon"><b>&rarr;</b></span>
-                    <div class="card"><div class="card-header">3. Development Phase: Building the Project</div><br>
-                        Our team initially struggled with the learning curve regarding Git and GitHub, but we were able to learn and adapt quickly. We used the framework of our Django tutorial to initialize our project.
-                        We broke up each user story into smaller tasks and made sure to have other team members review our code before merging anything to the repository. This gave members a chance to share any challenges they were facing and helped us stay up to date with our progress.</div>
-                    <span class="icon"><b>&rarr;</b></span>
-                    <div class="card"><div class="card-header">4. Testing & Deployment: Ensuring Functionality</div><br>
-                        We made sure to use Git and branches effectively to test our work before merging it into main to avoid any conflicts. The process of testing was extensive and occurred throughout the creation of the project, rather than solely at the end.</div>
-                </div>
-            </section>
             <section class="vid-container" style="height: fit-content;">
-                <video autoplay muted loop playsinline>
-                    <source src="static/bg1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <footer style="background: rgba(222, 222, 222, 0.5);">
+                <footer style="background: rgba(222, 222, 222, 0.15);">
                     <p>© 2024 Lindsey Yi</p>
                 </footer>
+            </section>
             </section>
         </main>
     
     
         <script src="js/accordion.js"></script>
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9154d3b8adb6b0b1","version":"2025.1.0","r":1,"token":"4f175b1ac3204b9ca216125bb4bd6018","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
     </body>
     </html>

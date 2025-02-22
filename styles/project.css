@@ -125,6 +125,22 @@ h4desc {
     border-radius: 10px;
     animation: pulse 6s infinite;
   }
+  .image5 {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    width: 40px;
+    border-radius: 10px;
+    animation: jump 2.4s infinite;
+    z-index: 2;
+  }
+  .image6 {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 200px;
+    border-radius: 10px;
+  }
 
   @keyframes pulse {
     0% {
@@ -135,6 +151,18 @@ h4desc {
     }
     100% {
         transform: scale(1);
+    }
+  }
+
+  @keyframes jump {
+    0% {
+        transform: translateY(13px) rotate(0deg) scale(.96);
+    }
+    70% {
+        transform: translateY(-20px) rotate(-7deg) scale(1.03);
+    }
+    100% {
+        transform: translateY(15px) rotate(0deg) scale(.95);
     }
   }
 
@@ -275,6 +303,7 @@ h4desc {
 #card_4 {
 	--index: 4;
 }
+
 
 .card {
 	position: sticky;
