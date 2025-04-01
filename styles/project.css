@@ -403,6 +403,11 @@ h4desc {
     z-index: 1; 
 }
 
+.tablet {
+    width: 70%; height: 60%; top: 45px; left: 32px; z-index: 5;
+    position: relative;
+}
+
 @media (max-width: 1000px) {
     .topheader {
         margin: 50px 20px 50px 25px;
@@ -535,4 +540,25 @@ h4desc {
     width: auto; height: 350px; top: 50px;
     z-index: 1; 
 }
+
+.tablet {
+    width: 71%; height: 64%; top: 75px; left: 6px; z-index: 5;
+    position: relative;
+}
+.image3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    border-radius: 10px;
+    animation: pulse 4.5s infinite;
+  }
+  .image4 {
+    position: absolute;
+    top: 55px;
+    left: 135px;
+    width: 9ch;
+    border-radius: 10px;
+    animation: pulse 6s infinite;
+  }
 }
