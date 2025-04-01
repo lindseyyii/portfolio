@@ -4,6 +4,7 @@ body {
     color: white;
     font-family: 'IBM Plex Sans', sans-serif;
 }
+.about {margin: 50px 150px 50px 150px;}
 
 nav ul {
     list-style: none;
@@ -230,4 +231,6 @@ h4 { font-size: 20px;}
 .ipadvid { width: 260px; height: 190px;}
 
 .two { margin: 50px; height: 55vh;}
+h3 {width: 90%;}
+.about {margin: 50px 50px 50px 70px;}
 }

@@ -290,9 +290,7 @@ h4desc {
 
 
 #cards {
-	/* Make place at bottom, as items will slide to that position*/
 	padding-bottom: calc(var(--numcards) * var(--card-top-offset));
-	/* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
 	margin-bottom: var(--card-margin);
 }
 
@@ -401,38 +399,23 @@ h4desc {
         font-size: 15px;
     }
     .img1 {
-        position: absolute;
-        display: flex;
         top: 40px;
-        left: 80px;
+        left: 10px;
         width: 150px;
         height: 80px;
-        transform: rotate(-340deg);
-        z-index: 2;
     }
     
     .img2 {
-        position: relative;
-        display: flex;
-        top: 60px;
-        left: 30px;
-        width: 100px;
-        rotate: -5deg;
-        z-index: 3;
+        top: 110px;
+        left: 5px;
+        width: 140px;
         height: 90px;
-        box-shadow: #636363 0px 0px 7px;
-        filter: brightness(1.2);
     }
     
     .img3 {
-        position: absolute;
-        display: block;
-        top: 30px;
+        top: 150px;
         left: 10px;
-        width: 70px;
-        height: auto;
-        rotate: -25deg;
-        z-index: 1;
+        width: 90px;
     }
 
     :root {
@@ -483,4 +466,5 @@ h4desc {
     width: 50%;
     margin: 0px 0px 0px 0px;
 }
+.parent {margin: 0 10px;}
 }
