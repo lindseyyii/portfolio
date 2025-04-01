@@ -369,7 +369,7 @@ h4desc {
 
 @media (max-width: 1000px) {
     .topheader {
-        margin: 50px 0px 50px 30px;
+        margin: 50px 20px 50px 25px;
     }
     .secondheader {
         margin: 0px;
