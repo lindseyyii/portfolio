@@ -416,7 +416,7 @@ h4desc {
         margin: 0px;
     }
     .info-cards {
-        margin-top: 50px;
+        margin: 20px;
         display: grid;
         grid-template-columns: 20% 5% 20% 5% 20% 5% 20%;
         justify-content: center;
@@ -560,5 +560,24 @@ h4desc {
     width: 9ch;
     border-radius: 10px;
     animation: pulse 6s infinite;
+  }
+  .topheader h2 {
+    width: 70%;
+  }
+  .image5 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 25px;
+    border-radius: 10px;
+    animation: jump 2.4s infinite;
+    z-index: 2;
+  }
+  .image6 {
+    position: absolute;
+    top: 75px;
+    left: -40px;
+    width: 130px;
+    border-radius: 10px;
   }
 }

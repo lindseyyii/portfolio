@@ -226,9 +226,9 @@ h4 { font-size: 20px;}
 .text {width: 50%; margin: 0px 0px 0px 0px;}
 
 .iphone img {width: 150px;}
-.ipad {position: relative; width: 275px; height: 195px;}
-
-.ipadvid { width: 260px; height: 190px;}
+.ipad {position: relative; width: 250px; height: 160px;}
+.ipadimg {top: 40px;}
+.ipadvid { width: 230px; height: 190px; top: 25px;}
 
 .two { margin: 50px; height: 55vh;}
 h3 {width: 90%;}
