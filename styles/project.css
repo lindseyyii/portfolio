@@ -120,15 +120,15 @@ h4desc {
   .image3 {
     position: relative;
     top: 0;
-    left: 0;
-    width: 350px;
+    left: 30px;
+    width: 325px;
     border-radius: 10px;
     animation: pulse 4.5s infinite;
   }
   .image4 {
     position: absolute;
     top: 55px;
-    left: 175px;
+    left: 180px;
     width: 135px;
     border-radius: 10px;
     animation: pulse 6s infinite;
