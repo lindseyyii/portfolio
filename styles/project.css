@@ -2,6 +2,14 @@ img {
     width: 250px;
 }
 
+.topheader {
+    margin: 70px 150px 50px 150px;
+}
+
+.secondheader {
+    margin: 0 30px 0 60px;
+}
+
 h4desc {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 23px;
@@ -359,4 +367,120 @@ h4desc {
     height: auto;
     rotate: -25deg;
     z-index: 1;
+}
+
+@media (max-width: 1000px) {
+    .topheader {
+        margin: 50px 0px 50px 30px;
+    }
+    .secondheader {
+        margin: 0px;
+    }
+    .info-cards {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 20% 5% 20% 5% 20% 5% 20%;
+        justify-content: center;
+    }
+    .infocard {
+        color: #f6f6f6;
+        height: auto;
+        width: auto;
+        padding: 0px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        text-shadow: 0 0 2px #ffffff;
+    }
+    
+    .infocard-header {
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    h4desc {
+        font-size: 15px;
+    }
+    .img1 {
+        position: absolute;
+        display: flex;
+        top: 40px;
+        left: 80px;
+        width: 150px;
+        height: 80px;
+        transform: rotate(-340deg);
+        z-index: 2;
+    }
+    
+    .img2 {
+        position: relative;
+        display: flex;
+        top: 60px;
+        left: 30px;
+        width: 100px;
+        rotate: -5deg;
+        z-index: 3;
+        height: 90px;
+        box-shadow: #636363 0px 0px 7px;
+        filter: brightness(1.2);
+    }
+    
+    .img3 {
+        position: absolute;
+        display: block;
+        top: 30px;
+        left: 10px;
+        width: 70px;
+        height: auto;
+        rotate: -25deg;
+        z-index: 1;
+    }
+
+    :root {
+        --card-height: 70vw;
+        --card-margin: 50vw;
+    }
+    .card__content > div > h2 {
+        font-size: 20px;
+    }
+    .card__content > figure > ipad > ipadvid {
+        width: 50px;
+    }
+    .card__content > div > p {
+        font-size: 13px;
+    }
+.card__content > div {
+	grid-area: text;
+	width: 70%;
+	place-self: center;
+	text-align: left;
+
+	display: grid;
+	place-items: start;
+    margin: 30px 0px 40px 0px;
+    font-size: 17px;
+}
+
+.card__content > div > h2 {font-size: 38px;}
+.twop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    height: auto;
+}
+
+.twop-right {
+    flex-direction: row;
+    text-align:left;
+}
+
+.twop-left {
+    flex-direction: row-reverse;
+    text-align:right;
+}
+
+.textp {
+    width: 50%;
+    margin: 0px 0px 0px 0px;
+}
 }
