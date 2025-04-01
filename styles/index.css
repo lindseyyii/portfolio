@@ -10,7 +10,7 @@
 .carousel {
   position: relative;
   width: 90%;
-  height: 700px;
+  height: 500px;
   margin: 50px auto;
   align-items: baseline;
   overflow-x: hidden;
@@ -42,6 +42,13 @@
     width: 325px; /* Scale images to fit container */
     height: 325px; /* Maintain aspect ratio */
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6); /* Add subtle shadow */
+}
+
+.carousel-item video {
+  filter: brightness(95%);
+  width: 325px; /* Scale images to fit container */
+  height: 325px; /* Maintain aspect ratio */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6); /* Add subtle shadow */
 }
 
 /* Focused Item */
