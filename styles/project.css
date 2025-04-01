@@ -292,6 +292,7 @@ h4desc {
 #cards {
 	padding-bottom: calc(var(--numcards) * var(--card-top-offset));
 	margin-bottom: var(--card-margin);
+    padding-left: 0px;
 }
 
 #card_1 {
@@ -365,6 +366,41 @@ h4desc {
     height: auto;
     rotate: -25deg;
     z-index: 1;
+}
+
+.comp {
+    position: relative;
+    width: 600px; /* Adjust based on your iPad PNG size */
+    height: 400px; /* Adjust accordingly */
+  }
+ 
+  .compvid {
+    position: absolute;
+    right: 5%;
+    z-index: 1; /* Ensures it's behind the frame */
+    width: 384px; height: 204px; top: 70px; left: 50px;
+  }
+ 
+  .compimg {
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    width: 500px; /* Ensures the frame covers everything */
+    height: 360px;
+    z-index: 2; /* Ensures the frame is on top */
+}
+ 
+.handvid {
+    position: absolute;
+    z-index: 2; /* Ensures it's behind the frame */
+    width: 160px; height: 240px; top: 50px; left: 90px;
+  }
+ 
+  .handimg {
+    position: absolute;
+    left: 43px;
+    width: auto; height: 410px; top: 0px;
+    z-index: 1; 
 }
 
 @media (max-width: 1000px) {
@@ -467,4 +503,36 @@ h4desc {
     margin: 0px 0px 0px 0px;
 }
 .parent {margin: 0 10px;}
+.comp {
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+ 
+  .compvid {
+    position: absolute;
+    z-index: 1; /* Ensures it's behind the frame */
+    width: 180px; height: 120px; top: 80px; left: 15px;
+  }
+ 
+  .compimg {
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    width: 240px; /* Ensures the frame covers everything */
+    height: 190px;
+    z-index: 2; /* Ensures the frame is on top */
+  }
+  .handvid {
+    position: absolute;
+    z-index: 2; /* Ensures it's behind the frame */
+    width: 130px; height: 200px; top: 90px; left: 63px;
+  }
+ 
+  .handimg {
+    position: absolute;
+    left: 20px;
+    width: auto; height: 350px; top: 50px;
+    z-index: 1; 
+}
 }
